@@ -480,6 +480,14 @@ def predictOnRandomTestImage(myModel):
 
 
 def plotDeepLayers():
+    import numpy as np
+    import random
+    from tensorflow.keras.preprocessing.image import img_to_array, load_img
+    from tensorflow.keras.models import load_model
+    import matplotlib.pyplot as plt
+    import io
+    import base64
+
     global model
     global img_input
     global train_cats_dir
@@ -551,7 +559,6 @@ def plotDeepLayers():
             plot_collection.append(encoded_image)
 
     return plot_collection
-
 
 ### UI Code here for each tab
 def getContentSourceData():
