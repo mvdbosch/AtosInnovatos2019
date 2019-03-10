@@ -81,7 +81,6 @@ python-dateutil==2.8.0
 python-editor==1.0.4
 python-oauth2==1.1.0
 pytz==2018.9
-PyYAML==3.13
 qtconsole==4.4.3
 requests==2.21.0
 retrying==1.3.3
