@@ -561,6 +561,28 @@ def plotDeepLayers():
     return plot_collection
 
 ### UI Code here for each tab
+def getContentWelcome():
+    output = html.Div(id='tab-datasource-contents',children=[html.Div(id='container-welcome'),
+                                                             dbc.CardColumns(
+    [
+        dbc.Card(
+            [
+                dbc.CardHeader("Welcome",className='card text-white bg-primary mb-6'),
+                dbc.CardBody(
+                    [
+                        html.Div([
+                        html.Img(src='images/innovatos2019.png',width='350px'),
+                        dbc.CardText("Innovatos Plaza 2019, our yearly event for all Atos employees and their direct customer relations. The theme of this year is ‘Bring ideas to life’. Innovatos is our yearly event to share knowledge, skills and experience about disruptive technologies and business concepts. Join the 2019 edition with many interactive workshops, demonstrations and lively discussions."),
+                        ],style={'width': '100%'})
+                    ]
+                ),
+            ]
+        )])])
+
+    return output
+
+
+
 def getContentSourceData():
     global source_state
     global train_cat_fnames
@@ -905,6 +927,8 @@ def tab_content(active_tab, reset_clicks):
         return getContentResults()
     elif active_tab == 'tab-layers':
         return getContentDeepLayers()
+    elif active_tab == 'tab-welcome':
+        return getContentWelcome()
     return "This is tab {}".format(active_tab)
 
 
