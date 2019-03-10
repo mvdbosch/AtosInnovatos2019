@@ -943,7 +943,7 @@ def update_data(n_clicks):
         source_state = 2
 
         # Load internal dogs/cats
-        source_data_classes = ['cats', 'dogs']
+        source_data_classes = ['dogs', 'cats']
         listDataSet()
         createGenerators(labelClasses=source_data_classes)
 
