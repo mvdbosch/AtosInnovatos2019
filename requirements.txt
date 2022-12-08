@@ -10,7 +10,7 @@ bleach==3.1.0
 bottle==0.12.16
 brewer2mpl==1.4.1
 cachetools==3.1.0
-certifi==2018.11.29
+certifi==2022.12.7
 chardet==3.0.4
 Click==7.0
 cycler==0.10.0
